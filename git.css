@@ -1,0 +1,125 @@
+.git {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--app-bg);
+  color: #ccc;
+  font-family: 'Cascadia Code', monospace;
+  font-size: 13px;
+}
+
+.git__tabs {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  padding: 0 10px;
+}
+
+.git__tab {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: #888;
+  padding: 10px 14px;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: inherit;
+}
+.git__tab:hover { color: #ccc; }
+.git__tab--active { color: #4fc3f7; border-bottom-color: #4fc3f7; }
+
+.git__spacer { flex: 1; }
+
+.git__refresh {
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 8px;
+}
+.git__refresh:hover { color: #aaa; }
+
+.git__changes, .git__history, .git__remotes {
+  flex: 1;
+  overflow: auto;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.git__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.git__action {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 4px;
+  color: #aaa;
+  padding: 5px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: inherit;
+}
+.git__action:hover { background: rgba(255,255,255,0.1); color: #ddd; }
+
+.git__commit-area {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.git__commit-msg {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 5px;
+  color: #ccc;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 12px;
+  resize: vertical;
+  min-height: 60px;
+  outline: none;
+}
+.git__commit-msg:focus { border-color: rgba(79,195,247,0.4); }
+
+.git__commit-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.git__btn {
+  border: none;
+  border-radius: 5px;
+  padding: 6px 16px;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: inherit;
+}
+.git__btn--primary   { background: rgba(79,195,247,0.15); color: #4fc3f7; border: 1px solid rgba(79,195,247,0.3); }
+.git__btn--secondary { background: rgba(255,255,255,0.06); color: #aaa; border: 1px solid rgba(255,255,255,0.1); }
+.git__btn--disabled  { opacity: 0.4; cursor: default; }
+.git__btn--primary:hover:not(.git__btn--disabled) { background: rgba(79,195,247,0.25); }
+.git__btn--secondary:hover { background: rgba(255,255,255,0.1); }
+
+.git__output {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 4px;
+  color: #888;
+  font-size: 11px;
+  padding: 8px 12px;
+}
+
+.git__empty {
+  color: #555;
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+.git__cmd { color: #4fc3f7; }

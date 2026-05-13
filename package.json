@@ -1,0 +1,12 @@
+{
+  "name": "@cmdide/plugin-git",
+  "version": "1.0.0",
+  "description": "Git Insights plugin for CMD IDE — stage, commit, pull/push, branch management.",
+  "main": "index.tsx",
+  "types": "index.tsx",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=18",
+    "@cmdide/plugin-sdk": ">=1.0.0"
+  }
+}
