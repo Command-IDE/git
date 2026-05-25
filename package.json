@@ -19,9 +19,5 @@
     "vite": "^5.1.0",
     "vite-plugin-css-injected-by-js": "^3.4.0"
   },
-  "peerDependencies": {
-    "react": ">=18",
-    "@cmdide/plugin-sdk": ">=1.0.0"
-  },
   "license": "MIT"
 }
