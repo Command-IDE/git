@@ -1,12 +1,27 @@
 {
   "name": "@cmdide/plugin-git",
+  "pluginId": "git",
   "version": "1.0.0",
-  "description": "Git Insights plugin for CMD IDE — stage, commit, pull/push, branch management.",
-  "main": "index.tsx",
-  "types": "index.tsx",
-  "license": "MIT",
+  "description": "Git Insights plugin for CMD IDE — stage, commit, pull/push, and branch management.",
+  "author": "CMD IDE",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite build --watch"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.1.0",
+    "vite-plugin-css-injected-by-js": "^3.4.0"
+  },
   "peerDependencies": {
     "react": ">=18",
     "@cmdide/plugin-sdk": ">=1.0.0"
-  }
+  },
+  "license": "MIT"
 }

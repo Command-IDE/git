@@ -118,11 +118,15 @@ const gitPlugin: Plugin = {
   id: 'git',
   name: 'Git Insights',
   description: 'GitHub Desktop-style git UI: stage, commit, pull/push, and branch management.',
-  author: 'built-in',
+  author: 'CMD IDE',
   version: '1.0.0',
   tabType: 'git',
   tabTitle: 'git',
+  githubUrl: 'https://github.com/Command-IDE/git',
   TabComponent: GitTab,
+  commands: [
+    { name: 'git', description: 'open Git Insights panel' },
+  ],
 }
 
 export default gitPlugin
