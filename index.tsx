@@ -121,7 +121,7 @@ const gitPlugin: Plugin = {
   author: 'CMD IDE',
   version: '1.0.0',
   tabType: 'git',
-  tabTitle: 'git',
+  tabTitle: 'Git',
   githubUrl: 'https://github.com/Command-IDE/git',
   TabComponent: GitTab,
   commands: [
